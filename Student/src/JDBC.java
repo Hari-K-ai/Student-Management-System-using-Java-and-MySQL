@@ -4,12 +4,12 @@ import java.util.Scanner;
 public class JDBC {
     static final String URL = "jdbc:mysql://localhost:3306/student";
     static final String USER = "root";
-    static final String PASS = "Hari@2003";
+    static final String PASS = "PAssword";
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/student", "root", "Hari@2003")) {
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/student", "root", "PAssword")) {
         	Class.forName("com.mysql.cj.jdbc.Driver");
 
             while (true) {
@@ -73,3 +73,4 @@ public class JDBC {
         }
     }
 }
+
